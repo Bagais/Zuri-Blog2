@@ -19,7 +19,7 @@ class PostCreateView(CreateView):
 	fields = '_all_'
 	success_url = reverse_lazy('blog:all')
 
-class PostDetailView(DetailView(DetailView)):
+class PostDetailView(DetailView):
 	model = Post
 
 class PostUpdateView(UpdateView):
