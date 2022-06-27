@@ -16,7 +16,7 @@ class PostListView(ListView):
 
 class PostCreateView(CreateView):
 	model = Post
-	fields = '_all_'
+	fields = '__all__'
 	success_url = reverse_lazy('blog:all')
 
 class PostDetailView(DetailView):
@@ -24,7 +24,7 @@ class PostDetailView(DetailView):
 
 class PostUpdateView(UpdateView):
 	model = Post
-	fields = '_all_'
+	fields = '__all__'
 	success_url = reverse_lazy('blog:all')
 
 class PostDeleteView(DeleteView):
